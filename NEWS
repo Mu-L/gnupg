@@ -1,5 +1,22 @@
-Noteworthy changes in version 2.5.18 (unreleased)
+Noteworthy changes in version 2.5.18 (2026-02-24)
 -------------------------------------------------
+
+  * gpg: Support deleting a composite secret key in gpg-agent.  [T7875]
+
+  * gpg: Fix armor parsing when no CRC is found.  [T7071]
+
+  * gpgsm: New option --assert-validsig.  [rG9500b2c776]
+
+  * agent: Fix the recent regression in pkdecrypt with TPM RSA.
+    [T8045]
+
+  * scdaemon: Add support for D-Trust Card 6.1/6.4.  [rG987c6a398a]
+
+  * dirmngr: Let KS_SEARCH print all uid records for a key.
+    Fixes regression since 2015.  [rG2dde9ddf56]
+
+  * gpg-authcode-sign.sh: Keep the log file even on success.
+    [rGc0f9ca47f0]
 
   Release-info: https://dev.gnupg.org/T7999
 
