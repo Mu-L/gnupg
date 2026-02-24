@@ -10,7 +10,7 @@
 # WITHOUT ANY WARRANTY, to the extent permitted by law; without even the
 # implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-VERSION=2024-06-10
+VERSION=2026-02-24
 PGM=gpg-authcode-sign.sh
 
 set -e
@@ -186,6 +186,7 @@ if [ ! -f $autogenrc ]; then
 fi
 
 [ "$GPG_AUTHCODE_SIGN_MODE" = "disable" ] && dryrun=yes
+[ "$GPG_AUTHCODE_SIGN_MODE" = "stamp" ] && stamp=yes
 
 
 # Define the cleanup routine for osslsigncode
