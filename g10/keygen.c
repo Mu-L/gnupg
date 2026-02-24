@@ -3331,12 +3331,12 @@ const char *
 ask_kyber_variant (void)
 {
   struct {
-    const char *desc;           /* e.g. "Kyber 768"       */
-    const char *variant;        /* e.g. "kyber768_bp256"  */
-    unsigned int de_vs : 1;     /* Allowed in CO_DE_VS.   */
+    const char *desc;           /* e.g. "Kyber 768 (bp256)" */
+    const char *variant;        /* e.g. "kyber768_bp256"    */
+    unsigned int de_vs : 1;     /* Allowed in CO_DE_VS.     */
   } table[] = {
-    { "Kyber 768",      "kyber768_bp256", 1 },
-    { "Kyber 1024",     "kyber1024_bp384", 1 },
+    { "Kyber 768 (bp256)",   "kyber768_bp256", 1 },
+    { "Kyber 1024 (bp384)",  "kyber1024_bp384", 1 },
     { "Kyber 768 (X25519)",  "kyber768_cv25519", 0 },
     { "Kyber 1024 (X448)",   "kyber1024_cv448", 0 },
   };
